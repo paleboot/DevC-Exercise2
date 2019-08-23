@@ -1,0 +1,21 @@
+#title{
+    font-family: "BenchNine", sans-serif;
+    font-size: 50px;
+}
+body{
+    background-color: whitesmoke;
+}
+#teks {
+    display: block;
+    font-family: "BenchNine", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.btn-block{
+    font-family: "BenchNine", sans-serif;
+    font-size: 30px;
+}

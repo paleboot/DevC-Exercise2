@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <title>calculator</title>
 </head>
 <body>
-    <center>
-        <h1>Kalkulator</h1>
-    </center>
+    <div class="container-fluid">
+        <h1 id="title">calculator</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="teks">input angka!</div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <button class="btn-block" value=7 onclick="buttonPress(this.value)">7</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=8 onclick="buttonPress(this.value)">8</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=9 onclick="buttonPress(this.value)">9</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=/ onclick="buttonPress(this.value)">/</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <button class="btn-block" value=4 onclick="buttonPress(this.value)">4</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=5 onclick="buttonPress(this.value)">5</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=6 onclick="buttonPress(this.value)">6</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=x onclick="buttonPress(this.value)">x</button>
+            </div>
+            <div class="col-md-2"></div></div>
+    </div>
+    <div class="container-fluid">
+            <div class="row no-gutters">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <button class="btn-block" value=1 onclick="buttonPress(this.value)">1</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=2 onclick="buttonPress(this.value)">2</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=3 onclick="buttonPress(this.value)">3</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-block" value=- onclick="buttonPress(this.value)">-</button>
+            </div>
+            <div class="col-md-2"></div></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <button class="btn-block" value=0 onclick="buttonPress(this.value)">0</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn-block" value=. onclick="buttonPress(this.value)">.</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn-block" value=% onclick="buttonPress(this.value)">%</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn-block" value=+ onclick="buttonPress(this.value)">+</button>
+                </div>
+                <div class="col-md-2"></div></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    <button class="btn-block" onclick="clr()">CLEAR</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn-block" onclick="hasil()">=</button>
+                </div>
+            <div class="col-md-2"></div></div>
+        </div>
+    <script src="script.js"></script>
 </body>
 </html>
